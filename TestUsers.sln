@@ -1,9 +1,28 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27703.2018
+VisualStudioVersion = 15.0.26403.7
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestUsers", "TestUsers\TestUsers.csproj", "{CE5ABC22-147A-4B76-AFEC-3CBA6F1E34C0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaginaInicial", "PaginaInicial\PaginaInicial.csproj", "{D1D89DB8-4C93-40B1-B453-8DF5F8C2F4E4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bogus", "Source\Bogus\Bogus.csproj", "{340A2FE9-5B52-4FD7-9D21-83CCF1621E09}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bogus.Tests", "Source\Bogus.Tests\Bogus.Tests.csproj", "{C738E347-08EF-47DA-B531-EE99739BD759}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Root", "Root", "{5CA98FAF-2EF3-4B31-8123-19BB2A14206D}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		appveyor.yml = appveyor.yml
+		build.cmd = build.cmd
+		CONTRIBUTING.md = CONTRIBUTING.md
+		HISTORY.md = HISTORY.md
+		Source\paket.dependencies = Source\paket.dependencies
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Builder", "Source\Builder\Builder.fsproj", "{2E878DDF-5585-48F2-85E0-748579278C9A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Benchmark", "Source\Benchmark\Benchmark.csproj", "{B8239D68-FBFA-4AAD-98E8-75405EA5B71C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +30,26 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{CE5ABC22-147A-4B76-AFEC-3CBA6F1E34C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CE5ABC22-147A-4B76-AFEC-3CBA6F1E34C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CE5ABC22-147A-4B76-AFEC-3CBA6F1E34C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CE5ABC22-147A-4B76-AFEC-3CBA6F1E34C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1D89DB8-4C93-40B1-B453-8DF5F8C2F4E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1D89DB8-4C93-40B1-B453-8DF5F8C2F4E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1D89DB8-4C93-40B1-B453-8DF5F8C2F4E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1D89DB8-4C93-40B1-B453-8DF5F8C2F4E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{340A2FE9-5B52-4FD7-9D21-83CCF1621E09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{340A2FE9-5B52-4FD7-9D21-83CCF1621E09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{340A2FE9-5B52-4FD7-9D21-83CCF1621E09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{340A2FE9-5B52-4FD7-9D21-83CCF1621E09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C738E347-08EF-47DA-B531-EE99739BD759}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C738E347-08EF-47DA-B531-EE99739BD759}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C738E347-08EF-47DA-B531-EE99739BD759}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C738E347-08EF-47DA-B531-EE99739BD759}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E878DDF-5585-48F2-85E0-748579278C9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E878DDF-5585-48F2-85E0-748579278C9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E878DDF-5585-48F2-85E0-748579278C9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E878DDF-5585-48F2-85E0-748579278C9A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8239D68-FBFA-4AAD-98E8-75405EA5B71C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8239D68-FBFA-4AAD-98E8-75405EA5B71C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8239D68-FBFA-4AAD-98E8-75405EA5B71C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8239D68-FBFA-4AAD-98E8-75405EA5B71C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
