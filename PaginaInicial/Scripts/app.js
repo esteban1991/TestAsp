@@ -66,10 +66,7 @@ function addItem() {
         }
 
     });
-    //currenList.items.push(newItem);
-    //console.info(currenList);
-    //drawUsers();
-    //$("#newItemName").val("");
+   
 }
 
 
@@ -85,12 +82,7 @@ function drawUsers() {
         var $li = $("<li>").html(currentUser.name).attr("id", "item_" + i);
 
         var $deleteBtn = $("<button onClick='deleteItem(" + currentUser.id + ")'>D</button>").appendTo($li);
-        //var $checkBtn = $("<button onClick='checkItem(" + currentUser.id + ")'>C</button>").appendTo($li);
-
-
-        //if (currentUser.checked) {
-        //    $li.addClass("checked");
-        //}
+        
         $li.appendTo($list);
 
     }
@@ -112,8 +104,7 @@ function deleteItem(itemId) {
             drawUsers();
         }
     });
-    //currenList.items.splice(index, 1);
-    //drawUsers();
+    
 }
 
 function checkItem(itemId) {
@@ -136,33 +127,18 @@ function checkItem(itemId) {
 
             currenList = result;
             drawUsers();
-            // $("#newItemName").val("");
+       
 
         }
 
     });
 
-    //if ($("#item_" + index).hasClass("checked")) {
 
-    //    $("#item_" + index).removeClass("checked");
-
-    //}
-    //else {
-    //    $("#item_" + index).addClass("checked");
-    //}
 
 }
 
 function getUserListByID(id) {
-    //console.info(id);
-    //currenList.name = "mock users list";
-    //currenList.items = [
-    //    { name: "Esteban"},
-    //    { name:"Francisco"},
-    //    { name:"Andzia"}
-    //]
-    //showUserList();
-    //drawUsers();
+   
     $.ajax({
         type: "GET",
         dataType: "json",
